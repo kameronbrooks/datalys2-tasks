@@ -2,7 +2,7 @@ import time
 import datetime
 import sys
 # Import the new simple auto-scheduler
-from datalys2_tasks.scheduler.autorun import ensure_task
+from datalys2_tasks.scheduler.autorun import schedule_me
 
 def my_job_logic():
     """The actual work this script performs."""
@@ -23,11 +23,11 @@ if __name__ == "__main__":
     # This single line handles the "self-scheduling" logic.
     # 1. If the task "SimpleDemoTask" exists, it does nothing and returns True.
     # 2. If it doesn't exist, it uses 'schtasks' to register this file to run at the specified time.
-    ensure_task(
-        task_name="SimpleDemoTask",
-        schedule="ONCE",
-        start_time=start_time_str
-        # force_update=True # Uncomment this if you want to change the schedule every time you run it manually
+    schedule_me(
+        name="SimpleDemoTask-Daily",
+        frequency="DAILY", # We use DAILY with a specific time to mimic a one-time run.
+        at=start_time_str
+        # overwrite=True # Uncomment this if you want to change the schedule every time you run it manually
     )
 
     # After ensuring the schedule exists, we run the actual logic.

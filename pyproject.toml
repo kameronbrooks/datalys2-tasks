@@ -6,6 +6,24 @@ build-backend = "setuptools.build_meta"
 name = "dl2-tasks"
 version = "0.1.0"
 description = "A lightweight local task orchestration system built on windows task scheduler"
+readme = "README.md"
+authors = [
+    {name = "Datalys2 Team", email = "kameron@example.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Systems Administration",
+]
+keywords = ["windows", "task scheduler", "automation", "scheduling", "cron"]
 requires-python = ">=3.8"
 dependencies = [
     "fastapi>=0.100.0",
@@ -14,6 +32,12 @@ dependencies = [
     "requests>=2.28.0",
     "sqlalchemy>=2.0.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/datalys2-tasks"
+Documentation = "https://github.com/yourusername/datalys2-tasks/blob/main/DOCUMENTATION.md"
+Repository = "https://github.com/yourusername/datalys2-tasks.git"
+
 
 [project.scripts]
 datalys2-server = "datalys2_tasks.cli:main"
