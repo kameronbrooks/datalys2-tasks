@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dl2-tasks"
-version = "0.1.0"
+version = "0.2.0"
 description = "A lightweight local task orchestration system built on windows task scheduler"
 readme = "README.md"
 authors = [
-    {name = "Datalys2 Team", email = "kameron@example.com"}
+    {name = "Kameron Brooks", email = "kameron@creation-wasteland.com"}
 ]
 license = {file = "LICENSE"}
 classifiers = [
@@ -34,9 +34,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/datalys2-tasks"
-Documentation = "https://github.com/yourusername/datalys2-tasks/blob/main/DOCUMENTATION.md"
-Repository = "https://github.com/yourusername/datalys2-tasks.git"
+Homepage = "https://github.com/kameronbrooks/datalys2-tasks"
+Documentation = "https://github.com/kameronbrooks/datalys2-tasks/blob/main/DOCUMENTATION.md"
+Repository = "https://github.com/kameronbrooks/datalys2-tasks.git"
 
 
 [project.scripts]
